@@ -1,0 +1,353 @@
+.modalll {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(255, 253, 253, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalll-conteudo {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: #ccc;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 45%;
+    max-width: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+.botao {
+    background-color: #007bff; /* Azul primário do site */
+    color: white; /* Texto branco para contraste */
+    padding: 12px 24px; /* Espaçamento interno para conforto */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    font-size: 16px; /* Tamanho da fonte legível */
+    cursor: pointer; /* Indica que é clicável */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+  }
+  
+  .botao:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+  }
+  
+  .botao:active {
+    background-color: #004085; /* Azul ainda mais escuro no clique */
+  }
+
+  .botao-whatsapp {
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar por cima */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+    display: inline-block; /* Permite definir margens e preenchimento */
+}
+
+.botao-whatsapp:hover {
+    background-color: #128C7E; /* Cor verde mais escura ao passar o mouse */
+}
+
+.botao-whatsapp:active {
+    background-color: #075E54; /* Cor verde ainda mais escura ao clicar */
+}
+.formulario {
+    width: 90%; /* Largura relativa para telas menores */
+    max-width: 400px; /* Largura máxima para telas maiores */
+    padding: 20px;
+    font-family: sans-serif;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+.formulario h2 {
+    color: #333;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario select {
+    width: calc(100% - 22px); /* Ajuste para compensar o padding e a borda */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura */
+}
+
+.formulario button {
+    background-color: #ff9900; /* Laranja da imagem */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%; /* Largura total para telas menores */
+}
+
+/* Media query para telas menores (abaixo de 600px) */
+@media (max-width: 600px) {
+    .formulario {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+
+    .formulario input,
+    .formulario select {
+        padding: 8px; /* Reduz o padding dos campos em telas menores */
+    }
+
+    .formulario button {
+        padding: 10px 15px; /* Reduz o padding do botão em telas menores */
+    }
+}
+
+  .footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: white;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as colunas quebrem em telas menores */
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-coluna {
+    flex: 1 1 200px; /* Largura mínima de 200px */
+    margin-bottom: 20px;
+}
+
+.footer-coluna h3 {
+    margin-bottom: 15px;
+}
+
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 10px;
+}
+
+.footer-coluna a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1;
+    color: #000000;
+}
+
+.newsletter-botao {
+    background-color: #ff9800; /* Cor laranja do botão */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+/* Estilos para ícones de redes sociais (Font Awesome) */
+.fab {
+    color: white;
+}
+/* Estilos do formulário de newsletter (já fornecidos) */
+.newsletter-form { /* ... */ }
+.newsletter-input { /* ... */ }
+.newsletter-botao { /* ... */ }
+
+/* Estilos dos modais */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.servicos-viagem {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .titulo-destaque {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitulo {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card-servico {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card-servico:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icone {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  .card-servico h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .card-servico p {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .btn-saiba-mais {
+    color: #34db4a;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .btn-saiba-mais i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-saiba-mais:hover i {
+    transform: translateX(3px);
+  }
+
+  .loading {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.success-message, .error-message {
+    display: none;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+}
